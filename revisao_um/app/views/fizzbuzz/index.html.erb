@@ -1,0 +1,10 @@
+<h1>Fizzbuzz</h1>
+
+<%= form_for :fizzbuzz, url: {action: :new}, method: :get do |f| %>
+	<%= number_field_tag :n, params[:n] %>
+	<%= f.submit "Descubra!" %>
+<% end %>
+
+<% unless @result.nil? %>
+	<p>resultado: <%= @result %></p>
+<% end %>

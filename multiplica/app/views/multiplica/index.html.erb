@@ -1,0 +1,9 @@
+<%= form_for :calculos, url: {action: :new}, method: :get do |f| %>
+	<%= number_field_tag :a, params[:a] %>
+	<%= number_field_tag :b, params[:b] %>
+	<%= f.submit "Multiplicar!!" %>
+<% end %>
+
+<% unless @result.nil? %>
+	<p>Resultado = <%= @result %></p>
+<% end %>

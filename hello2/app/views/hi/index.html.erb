@@ -1,0 +1,9 @@
+<%= form_for :calculadora, url: { action: :new }, method: :get do |f|   %>
+  <%= text_field :a, params[:a] %>
+  <%= text_field :b, params[:b] %>
+  <%= f.submit 'Calcular!' %>
+<% end %>
+
+<% unless @result.nil? %>
+  <p> = <%= @result %> </p>
+<% end %>

@@ -1,0 +1,16 @@
+<%= form_for(@calculadoras) do |form| %>
+	
+	<p>
+		<%= form.text_field :a %>		
+		<%= form.text_field :b %>		
+	</p>
+
+	<p>
+		<%= form.submit %>
+	</p>
+
+	<p>
+		<%= @pessoa.result %>
+	</p>
+
+<% end %>
